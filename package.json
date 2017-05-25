@@ -1,0 +1,19 @@
+{
+  "name": "augustus",
+  "version": "1.0.0",
+  "description": "Root context for Lazydash. It contains links to all that is in the lazydash domain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lazydash/Augustus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lazydash/Augustus/issues"
+  },
+  "homepage": "https://github.com/Lazydash/Augustus#readme"
+}
