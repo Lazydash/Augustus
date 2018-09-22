@@ -1,14 +1,16 @@
 console.log("Application Start");
 var express = require('express');
 var app = express();
+var port = 8081;
 
-app.use(express.static('public'));
+app.get('/home/', function(req, res){
+    res.sendfile('./home/index.html');
+});
 
+app.get('/remote/', function(req, res){
+    res.sendfile('./remote/index.html');
+});
 
-var server = app.listen(8081, function () {
-   var host = server.address().address;
-   var port = server.address().port;
-
-   console.log("Augustus listening at http://%s:%s", host, port)
-
+app.listen(port, function(){
+    console.log('listening on *:' + port);
 });
