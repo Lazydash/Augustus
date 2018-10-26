@@ -4,11 +4,11 @@ var app = express();
 var port = 8081;
 
 app.get('/home/', function(req, res){
-    res.sendfile('./home/index.html');
+    res.sendfile('./public/home/index.html');
 });
 
 app.get('/remote/', function(req, res){
-    res.sendfile('./remote/index.html');
+    res.sendfile('./public/remote/index.html');
 });
 
 app.listen(port, function(){
